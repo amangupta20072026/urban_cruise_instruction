@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1500 1620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#173B5C"/>
+    </marker>
+    <marker id="arrow-danger" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C1443B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="1620" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="40" y="38" font-size="12" font-weight="700" letter-spacing="2" fill="#6B7280">BUSINESS FLOW</text>
+  <text x="40" y="70" font-size="28" font-weight="800" fill="#14181F">PINAAK — Quotation to Feedback</text>
+
+  <!-- Lane tint columns -->
+  <rect x="40"  y="160" width="340" height="1360" fill="#F3F4F6"/>
+  <rect x="400" y="160" width="340" height="1360" fill="#EAF1F8"/>
+  <rect x="760" y="160" width="340" height="1360" fill="#FDF3E3"/>
+  <rect x="1120" y="160" width="340" height="1360" fill="#E9F5EF"/>
+
+  <!-- Lane headers -->
+  <rect x="40"  y="90" width="340" height="70" fill="#6B7280"/>
+  <rect x="400" y="90" width="340" height="70" fill="#173B5C"/>
+  <rect x="760" y="90" width="340" height="70" fill="#8A5A00"/>
+  <rect x="1120" y="90" width="340" height="70" fill="#1F6B4A"/>
+  <text x="210" y="132" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">SYSTEM / ADMIN PORTAL</text>
+  <text x="570" y="132" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">CUSTOMER</text>
+  <text x="930" y="132" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">VENDOR (BA)</text>
+  <text x="1290" y="132" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">DRIVER</text>
+
+  <!-- Step 1: Quotation Created (System) -->
+  <rect x="60" y="200" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#D8DCE2" stroke-width="1.5"/>
+  <text x="210" y="238" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Quotation Created</text>
+  <text x="210" y="260" text-anchor="middle" font-size="11" fill="#6B7280">Saved by UC Admin Portal into</text>
+  <text x="210" y="276" text-anchor="middle" font-size="11" fill="#6B7280">the shared MySQL database</text>
+
+  <!-- Step 2: Customer Views Quote -->
+  <rect x="420" y="340" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#B9CBDA" stroke-width="1.5"/>
+  <text x="570" y="378" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Views Quotation</text>
+  <text x="570" y="400" text-anchor="middle" font-size="11" fill="#6B7280">Selects a vehicle option</text>
+  <text x="570" y="416" text-anchor="middle" font-size="11" fill="#6B7280">from the quote(s) shared</text>
+
+  <!-- Step 3: Confirm + Pay Advance -->
+  <rect x="420" y="490" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#B9CBDA" stroke-width="1.5"/>
+  <text x="570" y="524" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Confirms Booking</text>
+  <text x="570" y="544" text-anchor="middle" font-size="11" fill="#6B7280">Pays advance amount —</text>
+  <text x="570" y="560" text-anchor="middle" font-size="11" fill="#6B7280">acknowledgement required before</text>
+  <text x="570" y="576" text-anchor="middle" font-size="11" fill="#6B7280">driver/vehicle detail is released</text>
+
+  <!-- Step 4: Booking ID Generated -->
+  <rect x="60" y="640" width="300" height="90" rx="14" fill="#FFFFFF" stroke="#D8DCE2" stroke-width="1.5"/>
+  <text x="210" y="675" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Booking ID Generated</text>
+  <text x="210" y="697" text-anchor="middle" font-size="11" fill="#6B7280">Booking ID = Quotation / Enquiry ID</text>
+
+  <!-- Step 5: Vendor Receives Assignment -->
+  <rect x="780" y="780" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#E6C98A" stroke-width="1.5"/>
+  <text x="930" y="815" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Receives Assignment</text>
+  <text x="930" y="837" text-anchor="middle" font-size="11" fill="#6B7280">Direct assignment, or open</text>
+  <text x="930" y="853" text-anchor="middle" font-size="11" fill="#6B7280">broadcast to vendor pool</text>
+
+  <!-- Decision diamond -->
+  <polygon points="930,940 1030,1000 930,1060 830,1000" fill="#FFFFFF" stroke="#8A5A00" stroke-width="1.75"/>
+  <text x="930" y="996" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14181F">Vendor</text>
+  <text x="930" y="1013" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14181F">Accepts?</text>
+
+  <!-- Step 6: Assigns Vehicle + Driver -->
+  <rect x="780" y="1090" width="300" height="90" rx="14" fill="#FFFFFF" stroke="#E6C98A" stroke-width="1.5"/>
+  <text x="930" y="1125" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Assigns Vehicle + Driver</text>
+  <text x="930" y="1147" text-anchor="middle" font-size="11" fill="#6B7280">From the vendor's own fleet</text>
+
+  <!-- Step 7: Duty Slip Issued -->
+  <rect x="1140" y="1230" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#A9D6BF" stroke-width="1.5"/>
+  <text x="1290" y="1265" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Duty Slip Issued</text>
+  <text x="1290" y="1287" text-anchor="middle" font-size="11" fill="#6B7280">Pre-dispatch checklist run;</text>
+  <text x="1290" y="1303" text-anchor="middle" font-size="11" fill="#6B7280">customer contact time-gated</text>
+
+  <!-- Step 8: Trip Live -->
+  <rect x="1140" y="1380" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#A9D6BF" stroke-width="1.5"/>
+  <text x="1290" y="1415" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Trip Live</text>
+  <text x="1290" y="1437" text-anchor="middle" font-size="11" fill="#6B7280">OTP verified at pickup, live</text>
+  <text x="1290" y="1453" text-anchor="middle" font-size="11" fill="#6B7280">location, start/end KM capture</text>
+
+  <!-- Step 9: Customer tracks + pays balance -->
+  <rect x="420" y="1380" width="300" height="100" rx="14" fill="#FFFFFF" stroke="#B9CBDA" stroke-width="1.5"/>
+  <text x="570" y="1415" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14181F">Tracks Trip &amp; Pays Balance</text>
+  <text x="570" y="1437" text-anchor="middle" font-size="11" fill="#6B7280">Shares OTP at pickup;</text>
+  <text x="570" y="1453" text-anchor="middle" font-size="11" fill="#6B7280">submits feedback after trip closes</text>
+
+  <!-- Arrows -->
+  <!-- 1 -> 2 -->
+  <path d="M360,250 L390,250 L390,390 L415,390" fill="none" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow-muted)"/>
+  <!-- 2 -> 3 -->
+  <path d="M570,440 L570,485" fill="none" stroke="#173B5C" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <!-- 3 -> 4 -->
+  <path d="M415,540 L390,540 L390,685 L365,685" fill="none" stroke="#173B5C" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <!-- 4 -> 5 -->
+  <path d="M360,685 L930,685 L930,775" fill="none" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow-muted)"/>
+  <!-- 5 -> diamond -->
+  <path d="M930,880 L930,935" fill="none" stroke="#8A5A00" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <!-- diamond -> 6 (Yes) -->
+  <path d="M930,1060 L930,1085" fill="none" stroke="#2E7D5B" stroke-width="2.25" marker-end="url(#arrow-navy)"/>
+  <text x="948" y="1078" font-size="11.5" font-weight="700" fill="#2E7D5B">Yes</text>
+  <!-- diamond -> 5 (No, loop back) -->
+  <path d="M840,975 C 720,900 720,850 775,822" fill="none" stroke="#C1443B" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-danger)"/>
+  <text x="640" y="900" font-size="11" font-weight="700" fill="#C1443B">No — re-broadcast to next vendor</text>
+  <!-- 6 -> 7 -->
+  <path d="M1080,1135 L1110,1135 L1110,1280 L1135,1280" fill="none" stroke="#8A5A00" stroke-width="2" marker-end="url(#arrow-muted)"/>
+  <!-- 7 -> 8 -->
+  <path d="M1290,1330 L1290,1375" fill="none" stroke="#1F6B4A" stroke-width="2" marker-end="url(#arrow-navy)"/>
+  <!-- 8 <-> 9 parallel live sync -->
+  <path d="M1135,1430 L 725,1430" fill="none" stroke="#6B7280" stroke-width="1.75" stroke-dasharray="6,5" marker-end="url(#arrow-muted)"/>
+  <text x="930" y="1418" text-anchor="middle" font-size="10.5" fill="#6B7280">live location + OTP handoff</text>
+
+  <!-- Bottom note -->
+  <rect x="40" y="1540" width="1420" height="56" rx="10" fill="#F3F4F6"/>
+  <text x="750" y="1573" text-anchor="middle" font-size="12.5" font-style="italic" fill="#6B7280">Enquiry &amp; Lead stages happen before this — entirely inside the UC Admin Portal, outside this app's flow.</text>
+</svg>
